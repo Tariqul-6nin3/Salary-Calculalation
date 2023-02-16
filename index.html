@@ -13,29 +13,31 @@
   </head>
   <body>
     <header >
-        <h2 class="text-5xl text-cyan-500 text-center font-bold mt-8">Money Master</h2>
+        <h2 class="text-2xl md:text-5xl text-cyan-500 text-center font-bold mt-8">Money Master</h2>
     </header>
     <main>
-        <section class="mt-16 w-9/12 mx-auto flex gap-32 px-5 py-2"> 
-            <div class="w-1/2 ">
-                <img src="./image/pexels-anna-shvets-4482900.jpg" alt="">
+        <section class="mt-16 md:w-9/12 mx-auto flex flex-col md:flex-row gap-32 px-5 py-2"> 
+            <div class="w-full md:w-1/2 ">
+                <img  src="./image/pexels-anna-shvets-4482900.jpg" alt="">
             </div>
-            <div class="bg-slate-100 py-16 px-12">
+            <div class="bg-slate-100 py-16 px-5 md:px-12">
                 <div>
                   <h4 class="text-center text-3xl font-bold mb-8">Income</h4>
-                 <span class="text-xl font-semibold">Income:</span> <input class="bg-gray-50 py-2 px-4 rounded-md text-2xl mb-8 ml-4 outline outline-offset-1 outline-blue-200" type="text" name=""id="income"value="10000">
+                 <span class="text-xl font-semibold mr-4">Income:</span> <input class="bg-gray-50 py-2 px-4 rounded-md text-2xl mb-8 md:ml-4 outline outline-offset-1 outline-blue-200" type="text" name=""id="income"value="10000">
                 </div>
                 <div>
                  <h4 class="text-center text-2xl font-bold mb-8">Expenses</h4>
-                <span class="text-xl font-semibold">Food:</span><input class="bg-gray-50 py-2 px-4 rounded-md text-2xl mb-8 ml-4 outline outline-offset-1 outline-blue-200" type="text" name="" id="" > <br>
-                 <span class="text-xl font-semibold">Rent:</span><input class="bg-gray-50 py-2 px-4 rounded-md text-2xl mb-8 ml-4 outline outline-offset-1 outline-blue-200" type="text" name="" id="" >  <br>
-                 <span class="text-xl font-semibold">Cloths:</span><input class="bg-gray-50 py-2 px-4 rounded-md text-2xl mb-8 ml-4 outline outline-offset-1 outline-blue-200" type="text" name="" id="" > <br> <br>
+                <span class="text-xl font-semibold mr-6">Food:</span><input class="bg-gray-50 py-2 px-4 rounded-md text-2xl mb-8 md:ml-4 outline outline-offset-1 outline-blue-200" type="text" name="" id="" > <br>
+                 <span class="text-xl font-semibold mr-7">Rent:</span><input class="bg-gray-50 py-2 px-4 rounded-md text-2xl mb-8 md:ml-4 outline outline-offset-1 outline-blue-200" type="text" name="" id="" >  <br>
+              <span class="text-xl font-semibold -ml-2 mr-4">Cloths :</span><input class="bg-gray-50 py-2 px-4 rounded-md text-2xl mb-8 md:ml-4 outline outline-offset-1 outline-blue-200" type="text" name="" id="" > <br> <br>
                  <button id="calculate-btn" class="btn btn-wide mb-8 ml-20 outline outline-offset-1 outline-blue-200">Calculate</button>
                 </div>
                 <div>
-                    <h3 class="text-center text-2xl font-bold mb-8 ml-4">Total Expenses:<span id="total-expense">00</span></h3>
-                    <h3 class="text-center text-2xl font-bold mb-8 ml-4">Balance:<span id="remaining-balance">00</span></h3>
-                    <span class="text-xl font-semibold">Save:</span><input  class="bg-gray-50 py-2 px-4 rounded-md text-2xl w-1/5 mb-8 ml-4 mr-4 outline outline-offset-1 outline-blue-200 text-center" type="text" name="" id="saving-field" > <span class="mr-4 text-2xl">%</span> <input id="save-btn" type="submit" value="Save" class="btn text-lg outline outline-offset-1 outline-blue-200" />
+                    <h3 class="text-center text-2xl font-bold mb-8 md:ml-4">Total Expenses:<span id="total-expense">00</span></h3>
+                    <h3 class="text-center text-2xl font-bold mb-8 md:ml-4">Balance:<span id="remaining-balance">00</span></h3>
+                    <div class="text-center">
+                      <span class="text-xl font-semibold mr-4">Save:</span><input  class="bg-gray-50 py-2 px-4 rounded-md text-2xl w-1/5 mb-8 md:ml-4 mr-4 outline outline-offset-1 outline-blue-200 text-center" type="text" name="" id="saving-field" > <span class="mr-4 text-2xl">%</span> <input id="save-btn" type="submit" value="Save" class="btn text-lg outline outline-offset-1 outline-blue-200" />
+                    </div>
                 </div>
                 <div>
                     <h4  class="text-center text-2xl font-bold mb-8 ">Saving Amount: <span id="saving-amount-field">00</span> </h4>
